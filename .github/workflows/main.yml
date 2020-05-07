@@ -11,4 +11,4 @@ jobs:
 
       - name: annotate
         run: |
-          echo "::error file=test.txt,line=1::hoge\nfuga"
+          echo "::error file=test.txt,line=1::hoge\nfuga\npiyo\nuooo"
