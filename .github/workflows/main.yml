@@ -10,4 +10,5 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: annotate
-        run: echo "::error file=test.txt,line=1::hoge\nfuga"
+        run: |
+          echo "::error file=test.txt,line=1::hoge\nfuga"
