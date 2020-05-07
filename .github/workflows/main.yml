@@ -1,0 +1,13 @@
+name: annotation
+
+on: [push]
+
+jobs:
+  build:
+    name: Annotation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: annotate
+        run: echo "::error file=test.txt,line=1::hoge\nfuga"
