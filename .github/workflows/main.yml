@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      
+      - run: echo GITHUB_ACTIONS=$GITHUB_ACTIONS
 
       - name: annotate
         run: sh annotate.sh
